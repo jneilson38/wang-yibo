@@ -14,8 +14,16 @@ nav ul {
 nav li {
 	margin: 0 .5rem;
 }
-p {
-	text-align: center;
+.header__image {
+	margin: 0 auto;
+	max-height: 22rem;
+	padding: 0 0 1rem;
+}
+.header__heading {
+	margin-bottom: .5rem;
+	text-transform: uppercase;
+	font-style: italic;
+	color: #070D25;
 }
 .main__heading {
 	margin-bottom: 2rem;
@@ -27,4 +35,7 @@ p {
 .heading {
 	font-family: serif;
 	text-align: center;
-	}
+}
+.header__summary {
+	text-align: center;
+}
