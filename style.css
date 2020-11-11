@@ -167,3 +167,50 @@ nav li {
 		text-align: left;
 	}
 }
+/* Media queries */
+@media (min-width: 48rem) {
+	.columns {
+		flex-direction: row;
+	}
+	.column {
+		justify-content: flex-start;
+	}
+	/* On desktop, columns in header are not even width */
+	.header .column-one {
+		flex-basis: 40%;
+	}
+	.header .column-two {
+		flex-basis: 60%;
+	}
+	.columns--three-col .image {
+		order: 0;
+	}
+	.mobile-only {
+		display: none;
+	}
+	.text-block {
+		max-width: 55ch;
+	}
+	.button {
+		margin-top: 1rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.column.image {
+		display: flex;
+		justify-content: center;
+	}
+	.header__heading {
+		text-align: left;
+		font-size: 3rem;
+	}
+	.header__summary {
+		text-align: left;
+	}
+	.nav-list--header {
+		justify-content: flex-start;
+	}
+	.emphasis {
+		text-align: left;
+	}
+}
