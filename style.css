@@ -56,20 +56,6 @@ p {
 	justify-content: center;
 	padding: 0 2rem;
 }
-.inverted {
-	background: #070D25;
-	color: white;
-}
-.inverted .button {
-	background: white;
-	color: black;
-}
-.inverted a {
-	color: white;
-}
-.inverted .home-rule {
-	background-color: white;
-}
 .main__heading {
 	margin-bottom: 2rem;
 	margin-left: auto;
