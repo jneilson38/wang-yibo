@@ -1,0 +1,30 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+img {
+	max-width: 100%;
+	}
+nav ul {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	margin: 0 .5rem;
+}
+p {
+	text-align: center;
+}
+.main__heading {
+	margin-bottom: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2rem;
+	max-width: 60%;
+}
+.heading {
+	font-family: serif;
+	text-align: center;
+	}
