@@ -41,34 +41,20 @@ nav li {
 	max-width: 80rem;
 	margin-left: auto;
 	margin-right: auto;
-}
-.column {
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
+	display: flex;
 	padding: 0 2rem;
 }
+.
 .inverted {
 	background: #070D25;
 	color: white;
-}
-.inverted .button {
-	background: white;
-	color: black;
 }
 .inverted a {
 	color: white;
 }
 .inverted .home-rule {
 	background-color: white;
-}
-.columns--three-col .image {
-	order: -1;
-	margin-bottom: 2rem;
-}
-.home-rule {
-	height: 4px;
-	width: 80%;
 }
 .header__image {
 	margin: 0 auto;
@@ -117,19 +103,6 @@ nav li {
 }
 /* Media queries */
 @media (min-width: 48rem) {
-	.columns {
-		flex-direction: row;
-	}
-	.column {
-		justify-content: flex-start;
-	}
-	/* On desktop, columns in header are not even width */
-	.header .column-one {
-		flex-basis: 40%;
-	}
-	.header .column-two {
-		flex-basis: 60%;
-	}
 	.text-block {
 		max-width: 55ch;
 	}
@@ -137,10 +110,6 @@ nav li {
 		margin-top: 1rem;
 		margin-left: 0;
 		margin-right: 0;
-	}
-	.column.image {
-		display: flex;
-		justify-content: center;
 	}
 	.header__heading {
 		text-align: left;
@@ -151,36 +120,5 @@ nav li {
 	}
 	.nav-list--header {
 		justify-content: flex-start;
-	}
-	.emphasis {
-		text-align: left;
-	}
-}
-/* Media queries */
-@media (min-width: 48rem) {
-	.text-block {
-		max-width: 55ch;
-	}
-	.button {
-		margin-top: 1rem;
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.column.image {
-		display: flex;
-		justify-content: center;
-	}
-	.header__heading {
-		text-align: left;
-		font-size: 3rem;
-	}
-	.header__summary {
-		text-align: left;
-	}
-	.nav-list--header {
-		justify-content: flex-start;
-	}
-	.emphasis {
-		text-align: left;
 	}
 }
