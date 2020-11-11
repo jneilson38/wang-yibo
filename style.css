@@ -20,6 +20,9 @@ nav ul {
 nav li {
 	margin: 0 .5rem;
 }
+p {
+	text-align: center;
+}
 .button {
 	color: white;
 	background: #070D25;
@@ -68,9 +71,6 @@ nav li {
 	font-family: serif;
 	text-align: center;
 }
-.header__summary {
-	text-align: center;
-}
 /* Media queries */
 @media (min-width: 48rem) {
 	.columns {
@@ -80,6 +80,12 @@ nav li {
 		justify-content: flex-start;
 	}
 	/* On desktop, columns in header are not even width */
+	.header .column-one {
+		flex-basis: 40%;
+	}
+	.header .column-two {
+		flex-basis: 60%;
+	}
 	.columns--three-col .image {
 		order: 0;
 	}
@@ -101,9 +107,6 @@ nav li {
 	.header__heading {
 		text-align: left;
 		font-size: 3rem;
-	}
-	.header__summary {
-		text-align: left;
 	}
 	.nav-list--header {
 		justify-content: flex-start;
