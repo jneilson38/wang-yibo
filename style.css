@@ -37,15 +37,32 @@ nav li {
 .button:active {
 	box-shadow: 1px 1px 1px #c4c4c4;
 }
+.section {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	justify-content: center;
+}
 .content {
 	max-width: 80rem;
-	margin-left: auto;
-	margin-right: auto;
-	justify-content: center;
-	display: flex;
-	padding: 0 2rem;
+	text-align: center;
 }
-.
+.quote {
+  background: blue;
+  background-image: url("images/mountain.jpg");
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.quote-text {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .inverted {
 	background: #070D25;
 	color: white;
@@ -53,21 +70,10 @@ nav li {
 .inverted a {
 	color: white;
 }
-.inverted .home-rule {
-	background-color: white;
-}
 .header__image {
 	margin: 0 auto;
 	max-height: 22rem;
 	padding: 0 0 1rem;
-}
-.padding-vertical {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-}
-.nav-list--header {
-	margin-top: 1rem;
-	justify-content: center;
 }
 .header__heading {
 	margin-bottom: .5rem;
@@ -77,17 +83,7 @@ nav li {
 }
 .main__heading {
 	margin-bottom: 2rem;
-	margin-left: auto;
-	margin-right: auto;
 	font-size: 2rem;
-	max-width: 60%;
-}
-.emphasis {
-	margin: 1rem 0;
-	font-size: 1.5rem;
-	font-style: italic;
-	font-family: serif;
-	line-height: 1.4;
 	text-align: center;
 }
 .nav-list a {
@@ -96,10 +92,6 @@ nav li {
 }
 .heading {
 	font-family: serif;
-	text-align: center;
-}
-.header__summary {
-	text-align: center;
 }
 /* Media queries */
 @media (min-width: 48rem) {
@@ -112,13 +104,6 @@ nav li {
 		margin-right: 0;
 	}
 	.header__heading {
-		text-align: left;
 		font-size: 3rem;
-	}
-	.header__summary {
-		text-align: left;
-	}
-	.nav-list--header {
-		justify-content: flex-start;
 	}
 }
