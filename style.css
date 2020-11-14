@@ -10,7 +10,7 @@ body {
 }
 img {
 	max-width: 100%;
-	}
+}
 nav ul {
 	list-style: none;
 	display: flex;
@@ -19,12 +19,6 @@ nav ul {
 }
 nav li {
 	margin: 0 .5rem;
-}
-p {
-	text-align: center;
-}
-.class {
-	text-align: center;
 }
 .button {
 	color: white;
@@ -43,6 +37,31 @@ p {
 .button:active {
 	box-shadow: 1px 1px 1px #c4c4c4;
 }
+.section {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	justify-content: center;
+}
+.content {
+	max-width: 80rem;
+	text-align: center;
+}
+.quote {
+  background-image: url("images/mountain.jpg");
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.quote-text {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .inverted {
 	background: #070D25;
 	color: white;
@@ -50,21 +69,21 @@ p {
 .inverted a {
 	color: white;
 }
-.section {
-	justify-content: center;
-	text-align: center;
-}
 .header__image {
 	margin: 0 auto;
 	max-height: 22rem;
 	padding: 0 0 1rem;
 }
+.header__heading {
+	margin-bottom: .5rem;
+	text-transform: uppercase;
+	font-style: italic;
+	color: #070D25;
+}
 .main__heading {
 	margin-bottom: 2rem;
-	margin-left: auto;
-	margin-right: auto;
 	font-size: 2rem;
-	max-width: 60%;
+	text-align: center;
 }
 .nav-list a {
 	padding: 1rem;
@@ -72,17 +91,18 @@ p {
 }
 .heading {
 	font-family: serif;
-	text-align: center;
-}
-.link {
-	text-align: center;
 }
 /* Media queries */
 @media (min-width: 48rem) {
+	.text-block {
+		max-width: 55ch;
 	}
 	.button {
 		margin-top: 1rem;
 		margin-left: 0;
 		margin-right: 0;
+	}
+	.header__heading {
+		font-size: 3rem;
 	}
 }
