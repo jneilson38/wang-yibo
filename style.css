@@ -4,7 +4,10 @@ body {
 }
 img {
 	max-width: 100%;
-	}
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+}
 nav ul {
 	list-style: none;
 	display: flex;
@@ -14,8 +17,11 @@ nav ul {
 nav li {
 	margin: 0 .5rem;
 }
-.text {
+p {
 	text-align: center;
+}
+.text {
+	text-align:center;
 }
 .button {
 	color: white;
@@ -41,14 +47,21 @@ nav li {
 .inverted a {
 	color: white;
 }
-.section {
-	justify-content: center;
-	text-align: center;
+.content {
+	max-width: 80rem;
+	margin-left: auto;
+	margin-right: auto;
 }
-.header__image {
-	margin: 0 auto;
-	max-height: 22rem;
-	padding: 0 0 1rem;
+.columns {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 2rem;
 }
 .main__heading {
 	margin-bottom: 2rem;
@@ -65,14 +78,32 @@ nav li {
 	font-family: serif;
 	text-align: center;
 }
-.link {
-	text-align: center;
-}
 /* Media queries */
 @media (min-width: 48rem) {
+	.columns {
+		flex-direction: row;
+	}
+	.column {
+		justify-content: flex-start;
+	}
+	/* On desktop, columns in header are not even width */
+	.text-block {
+		max-width: 55ch;
+	}
 	.button {
 		margin-top: 1rem;
 		margin-left: 0;
 		margin-right: 0;
+	}
+	.column.image {
+		display: flex;
+		justify-content: center;
+	}
+	.header__heading {
+		text-align: left;
+		font-size: 3rem;
+	}
+	.nav-list--header {
+		justify-content: flex-start;
 	}
 }
